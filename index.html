@@ -5,55 +5,35 @@
 	<meta charset="UTF-8">
 	<title>:: Luis Alberto Gonzalez ::</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 
 <body>
-	<header class="header">
-		<div class="container">
-			<!-- <div class="btn-menu">
-			<label for="btn-menu"></label>
-		</div> -->
-			<div class="logo">
-				<h1>Luis Alberto Gonzalez - Desarrollador Full Stack</h1>
-			</div>
-			<label for="show-menu" class="show-menu">☰</label>
-			<input type="checkbox" id="show-menu">
-			<nav id="main-menu" class="menu">
+	<div class="hero">
+		<div class="nav-bar">
+			<div class="nav-links" id="nav-links">
+				<i class="fa fa-close" color="white" onclick="closeMenu()">✖️</i>
 				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li>
-						<a href="#">Servicios</a>
-						<ul class="sub-menu">
-							<li><a href="#">Aplicaciones Web</a></li>
-							<li><a href="#">Aplicaciones de Escritorio </a></li>
-							<li><a href="#">Consultoria</a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Contacto</a>
-						<ul class="sub-menu">
-							<li><a href="#">Linked In </a></li>
-							<li><a href="https://wa.me/+573017773426" target="_blank">Whatsapp</a></li>
-							<li><a href="#">Email</a></li>
-						</ul>
-					</li>
+					<a href="#"><li>Inicio</li></a>
+					<a href="#"><li>Contacto</li></a>
+					<a href="#"><li>Servicios</li></a>
 				</ul>
-			</nav>
+			</div>
+			<i class="fa fa-bars" color="white" onclick="showMenu()">☰</i>
 		</div>
-	</header>
-	<div class="capa"></div>
-
-	<!--	--------------->
-	<!-- <input type="checkbox" id="btn-menu">
-<div class="container-menu">
-	<div class="cont-menu">
-		<nav>
-			<a href="#">Git Hub</a>
-			<a href="#">Linked In</a>
-		</nav>
-		<label for="btn-menu">✖️</label>
+		<div class="banner-tittle">
+			<h1>Luis Alberto Gonzalez <br/> Desarrollador FullStack</h1>
+		</div>
 	</div>
-</div> -->
+	<script>
+		var show = document.getElementById("nav-links");
+		function showMenu(){
+			show.style.right="0";
+		}
+		function closeMenu(){
+			show.style.right="-200px";
+		}
+	</script>
 </body>
 
 </html>
