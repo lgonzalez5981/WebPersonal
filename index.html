@@ -9,22 +9,60 @@
 </head>
 
 <body>
-	<div class="hero">
-		<div class="nav-bar">
-			<div class="nav-links" id="nav-links">
-				<i class="fa fa-close" color="white" onclick="closeMenu()">✖️</i>
-				<ul>
-					<a href="#"><li>Inicio</li></a>
-					<a href="#"><li>Contacto</li></a>
-					<a href="#"><li>Servicios</li></a>
-				</ul>
+	<section id="inicio">
+		<div class="hero">
+			<div class="nav-bar">
+				<div class="nav-links" id="nav-links">
+					<i class="fa fa-close" color="white" onclick="closeMenu()">✖️</i>
+					<ul>
+						<a href="#"><li>Inicio</li></a>
+						<a href="#contacto"><li>Contacto</li></a>
+						<a href="#servicios"><li>Servicios</li></a>
+					</ul>
+				</div>
+				<i class="fa fa-bars" color="white" onclick="showMenu()">☰</i>
 			</div>
-			<i class="fa fa-bars" color="white" onclick="showMenu()">☰</i>
+			<div class="banner-tittle">
+				<h1>Luis Alberto Gonzalez <br/> Desarrollador FullStack</h1>
+			</div>
 		</div>
-		<div class="banner-tittle">
-			<h1>Luis Alberto Gonzalez <br/> Desarrollador FullStack</h1>
+	</section>
+	<section id="contacto">
+		<div class="hero">
+			<div class="nav-bar">
+				<div class="nav-links" id="nav-links">
+					<i class="fa fa-close" color="white" onclick="closeMenu()">✖️</i>
+					<ul>
+						<a href="#"><li>Inicio</li></a>
+						<a href="#contacto"><li>Contacto</li></a>
+						<a href="#servicios"><li>Servicios</li></a>
+					</ul>
+				</div>
+				<i class="fa fa-bars" color="white" onclick="showMenu()">☰</i>
+			</div>
+			<div class="banner-tittle">
+				<h1>Contacto En Construccion</h1>
+			</div>
 		</div>
-	</div>
+	</section>
+	<section id="servicios">
+		<div class="hero">
+			<div class="nav-bar">
+				<div class="nav-links" id="nav-links">
+					<i class="fa fa-close" color="white" onclick="closeMenu()">✖️</i>
+					<ul>
+						<a href="#"><li>Inicio</li></a>
+						<a href="#contacto"><li>Contacto</li></a>
+						<a href="#servicios"><li>Servicios</li></a>
+					</ul>
+				</div>
+				<i class="fa fa-bars" color="white" onclick="showMenu()">☰</i>
+			</div>
+			<div class="banner-tittle">
+				<h1>Servicios En Construccion</h1>
+			</div>
+		</div>
+	</section>
 	<script>
 		var show = document.getElementById("nav-links");
 		function showMenu(){
